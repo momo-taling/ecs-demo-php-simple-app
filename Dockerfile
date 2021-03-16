@@ -9,7 +9,7 @@ RUN yum install -y \
 
 # Install app
 RUN rm -rf /var/www/html/* && mkdir -p /var/www/html
-ADD src /var/www/html
+ADD ./ /var/www/html
 
 # Configure apache
 RUN chown -R apache:apache /var/www
